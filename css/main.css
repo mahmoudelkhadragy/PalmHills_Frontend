@@ -1,85 +1,4 @@
-body {
-  font-family: 'open sans', sans-serif;
-}
 
-/* font-family: "FuturaLTW01-Medium"; */
-/* font-family: 'Libre Franklin', sans-serif; */
-/* -------------------- Media Query -------------------- */
-
-@media (max-width: 767px) {
-
-  /* Mobil & Tablet */
-  .visible-xs {
-    display: block !important
-  }
-
-  .hidden-xs {
-    display: none !important
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-
-  /* Small screen Rules */
-  .container {
-    width: 750px;
-  }
-
-  .visible-sm {
-    display: block !important
-  }
-
-  .hidden-sm {
-    display: none !important
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-
-  /* Medium screen Rules */
-  .container {
-    width: 970px;
-  }
-
-  .visible-md {
-    display: block !important
-  }
-
-  .hidden-md {
-    display: none !important
-  }
-}
-
-@media (min-width: 1200px) {
-
-  /* Large screen Rules */
-  .container {
-    width: 1170px;
-  }
-
-  .visible-lg {
-    display: block !important
-  }
-
-  .hidden-lg {
-    display: none !important
-  }
-}
-
-/* -------------------- Media Query -------------------- */
-/* -------------------- My Framework ------------------- */
-.visible-xs,
-.visible-sm,
-.visible-md,
-.visible-lg {
-  display: none;
-}
-
-body {
-  background-color: #b03032;
-}
-
-/* -------------------- My Framework ------------------- */
 /* ----- Header Styles ----- */
 header {
   background: url('../img/h-Background.png');
@@ -193,4 +112,66 @@ header .logo_header {
   border-right: 1px solid #fff;
 }
 
+/* ----- Our Developments Styles ----- */
+.developments {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+
+.card_place {
+  margin: 40px 0;
+}
+
+.image_card {
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 1);
+  border: 5px solid rgba(255, 255, 255, 1);
+  transition: all .2s ease-in-out;
+}
+
+.image_card:hover {
+  opacity: .6;
+}
+
+.head_fix_m {
+  margin: 10px auto;
+}
+
+@media (max-width: 767px) {
+
+  .developments .btn_red,
+  .developments .head_fix_m {
+    width: 55%;
+  }
+
+}
+
 /*  */
+.family_logos {
+  padding: 40px 0;
+}
+
+.family_logos .row {
+  width: 80%;
+  margin: auto;
+}
+
+.head_white {
+  margin-bottom: 10px;
+}
+
+.family_logos .col-sm-4,
+.family_logos .col-6 {
+  padding-right: 12px;
+  padding-left: 10px;
+}
+
+.family_logos .family_img {
+  background-color: #fff;
+  margin: 10px 0;
+  transition: all .2s ease-in-out;
+}
+
+.family_logos .family_img:hover img {
+  opacity: .6;
+}
