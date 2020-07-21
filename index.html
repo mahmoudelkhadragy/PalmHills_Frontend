@@ -59,18 +59,57 @@
   <!-- Navbar -->
   <nav class="navbar hidden-xs">
     <div class="container">
-      <ul class="list-unstyled">
-        <li class="nav_link active_link">
+      <ul class="list-unstyled main_ul">
+        <li class="nav_link main_li active_link">
           <a href="#">Home</a>
         </li>
-        <li class="nav_link">
+        <li class="nav_link main_li">
           <a href="#">About Us</a>
+          <div class="sub_div">
+            <ul class="list-unstyled sub_ul">
+              <li class="sub_li">
+                <a href="#">Hacienda</a>
+              </li>
+              <li class="sub_li">
+                <a href="#">Hacienda</a>
+              </li>
+              <li class="sub_li">
+                <a href="#">Hacienda</a>
+              </li>
+            </ul>
+          </div>
         </li>
-        <li class="nav_link">
+        <li class="nav_link main_li">
           <a href="#">Contact Us</a>
+          <div class="sub_div">
+            <ul class="list-unstyled sub_ul">
+              <li class="sub_li">
+                <a href="#">Hacienda</a>
+              </li>
+              <li class="sub_li">
+                <a href="#">Hacienda</a>
+              </li>
+              <li class="sub_li">
+                <a href="#">Hacienda</a>
+              </li>
+            </ul>
+          </div>
         </li>
-        <li class="nav_link">
+        <li class="nav_link main_li">
           <a href="#">More</a>
+          <div class="sub_div">
+            <ul class="list-unstyled sub_ul">
+              <li class="sub_li">
+                <a href="#">Hacienda</a>
+              </li>
+              <li class="sub_li">
+                <a href="#">Hacienda</a>
+              </li>
+              <li class="sub_li">
+                <a href="#">Hacienda</a>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
     </div>
@@ -243,16 +282,53 @@
   <!-- video section -->
   <section class="video_section">
     <div class="container">
-      <video id="my-video" class="video-js" controls preload="auto" width="910" height="550"
-        poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
-        <source src="img/video1.mp4" type="video/mp4" />
-        <source src="img/video1.webm" type="video/webm" />
-        <p class="vjs-no-js">
-          To view this video please enable JavaScript, and consider upgrading to a
-          web browser that
-          <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-        </p>
-      </video>
+      <div class="video_slider_container">
+        <div class="video_slider">
+          <div class="video_item">
+            <video id="my-video" class="video-js" controls preload="auto" width="910" height="550"
+              poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+              <source src="img/video1.mp4" type="video/mp4" />
+              <source src="img/video1.webm" type="video/webm" />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+              </p>
+            </video>
+            <div class="video_controls_icons">
+              <span class="bar_video"><i class="fas fa-bars"></i></span>
+              <div class="controls_video_div">
+                <span class="share_v_icon"><i class="fas fa-share-alt"></i></span>
+                <span class="info_v_icon"><i class="fas fa-info"></i></span>
+                <span class="close_v_icon"><i class="fas fa-times"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video_item">
+            <video id="my-video" class="video-js" controls preload="auto" width="910" height="550"
+              poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+              <source src="img/video1.mp4" type="video/mp4" />
+              <source src="img/video1.webm" type="video/webm" />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+              </p>
+            </video>
+            <div class="video_controls_icons">
+              <span class="bar_video"><i class="fas fa-bars"></i></span>
+              <div class="controls_video_div">
+                <span class="share_v_icon"><i class="fas fa-share-alt"></i></span>
+                <span class="info_v_icon"><i class="fas fa-info"></i></span>
+                <span class="close_v_icon"><i class="fas fa-times"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel_nav video_next"><i class="fas fa-chevron-right"></i></button>
+        <button class="carousel_nav video_prev"><i class="fas fa-chevron-left"></i></button>
+      </div>
     </div>
   </section>
 
@@ -270,6 +346,13 @@
               <span class="download_icon"><i class="fas fa-download"></i></span>
               <span class="share_icon"><i class="fas fa-share"></i></span>
             </div>
+            <div class="social_share_links">
+              <span><i class="fab fa-facebook-f"></i></span>
+              <span><i class="fab fa-twitter"></i></span>
+              <span><i class="fab fa-pinterest"></i></span>
+              <span><i class="fab fa-tumblr"></i></span>
+              <span><i class="far fa-envelope"></i></span>
+            </div>
           </div>
         </div>
       </div>
@@ -282,6 +365,13 @@
               <span class="heart_solid"><i class="fas fa-heart"></i></span>
               <span class="download_icon"><i class="fas fa-download"></i></span>
               <span class="share_icon"><i class="fas fa-share"></i></span>
+            </div>
+            <div class="social_share_links">
+              <span><i class="fab fa-facebook-f"></i></span>
+              <span><i class="fab fa-twitter"></i></span>
+              <span><i class="fab fa-pinterest"></i></span>
+              <span><i class="fab fa-tumblr"></i></span>
+              <span><i class="far fa-envelope"></i></span>
             </div>
           </div>
         </div>
@@ -296,6 +386,13 @@
               <span class="download_icon"><i class="fas fa-download"></i></span>
               <span class="share_icon"><i class="fas fa-share"></i></span>
             </div>
+            <div class="social_share_links">
+              <span><i class="fab fa-facebook-f"></i></span>
+              <span><i class="fab fa-twitter"></i></span>
+              <span><i class="fab fa-pinterest"></i></span>
+              <span><i class="fab fa-tumblr"></i></span>
+              <span><i class="far fa-envelope"></i></span>
+            </div>
           </div>
         </div>
       </div>
@@ -308,6 +405,73 @@
               <span class="heart_solid"><i class="fas fa-heart"></i></span>
               <span class="download_icon"><i class="fas fa-download"></i></span>
               <span class="share_icon"><i class="fas fa-share"></i></span>
+            </div>
+            <div class="social_share_links">
+              <span><i class="fab fa-facebook-f"></i></span>
+              <span><i class="fab fa-twitter"></i></span>
+              <span><i class="fab fa-pinterest"></i></span>
+              <span><i class="fab fa-tumblr"></i></span>
+              <span><i class="far fa-envelope"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="center_items">
+          <img class="img-fluid" src="img/slider5.jpg" alt="hotel">
+          <div class="social_share">
+            <div class="social_share_container">
+              <span class="heart_not_solid"><i class="far fa-heart"></i></span>
+              <span class="heart_solid"><i class="fas fa-heart"></i></span>
+              <span class="download_icon"><i class="fas fa-download"></i></span>
+              <span class="share_icon"><i class="fas fa-share"></i></span>
+            </div>
+            <div class="social_share_links">
+              <span><i class="fab fa-facebook-f"></i></span>
+              <span><i class="fab fa-twitter"></i></span>
+              <span><i class="fab fa-pinterest"></i></span>
+              <span><i class="fab fa-tumblr"></i></span>
+              <span><i class="far fa-envelope"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="center_items">
+          <img class="img-fluid" src="img/slider6.jpg" alt="hotel">
+          <div class="social_share">
+            <div class="social_share_container">
+              <span class="heart_not_solid"><i class="far fa-heart"></i></span>
+              <span class="heart_solid"><i class="fas fa-heart"></i></span>
+              <span class="download_icon"><i class="fas fa-download"></i></span>
+              <span class="share_icon"><i class="fas fa-share"></i></span>
+            </div>
+            <div class="social_share_links">
+              <span><i class="fab fa-facebook-f"></i></span>
+              <span><i class="fab fa-twitter"></i></span>
+              <span><i class="fab fa-pinterest"></i></span>
+              <span><i class="fab fa-tumblr"></i></span>
+              <span><i class="far fa-envelope"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="center_items">
+          <img class="img-fluid" src="img/slider7.jpg" alt="hotel">
+          <div class="social_share">
+            <div class="social_share_container">
+              <span class="heart_not_solid"><i class="far fa-heart"></i></span>
+              <span class="heart_solid"><i class="fas fa-heart"></i></span>
+              <span class="download_icon"><i class="fas fa-download"></i></span>
+              <span class="share_icon"><i class="fas fa-share"></i></span>
+            </div>
+            <div class="social_share_links">
+              <span><i class="fab fa-facebook-f"></i></span>
+              <span><i class="fab fa-twitter"></i></span>
+              <span><i class="fab fa-pinterest"></i></span>
+              <span><i class="fab fa-tumblr"></i></span>
+              <span><i class="far fa-envelope"></i></span>
             </div>
           </div>
         </div>
@@ -324,8 +488,17 @@
         <span class="expand_icon"><i class="fas fa-expand"></i></span>
         <span class="download_icon"><i class="fas fa-download"></i></span>
         <span class="heart_not_solid_popup"><i class="far fa-heart"></i></span>
-        <span class="heart_solid_popup"><i class="fas fa-heart"></i></span>
-        <span class="share_icon_popup"><i class="fas fa-share"></i></span>
+        <span class="heart_solid_popup"><i class="fas fa-heart"></i><span class="likes_number"></span></span>
+        <span class="share_icon_popup hidden-xs">
+          <i class="fas fa-share"></i>
+          <div class="share_controls_part">
+            <span><i class="fab fa-facebook-f"></i></span>
+            <span><i class="fab fa-twitter"></i></span>
+            <span><i class="fab fa-pinterest"></i></span>
+            <span><i class="fab fa-tumblr"></i></span>
+            <span><i class="far fa-envelope"></i></span>
+          </div>
+        </span>
       </div>
       <div class="float-right">
         <span class="close_popup"><i class="fas fa-times"></i></span>
@@ -333,39 +506,51 @@
       <div class="clearfix"></div>
     </div>
     <div class="row">
-      <div class="col-md-6 col-12">
-        <div class="slider_popup">
-          <div class="slids">
-            <div class="img_slider_popup">
-              <img class="img-fluid" src="img/slider1.jpg" alt="hotel">
+      <div class="col-md-7 col-12">
+        <div class="popup_slider_container">
+          <div class="slider_popup">
+            <div class="slids">
+              <div class="img_slider_popup slick-slide">
+                <img class="img-fluid" src="img/slider1.jpg" alt="hotel">
+              </div>
+            </div>
+            <div class="slids">
+              <div class="img_slider_popup slick-slide">
+                <img class="img-fluid" src="img/slider2.jpg" alt="hotel">
+              </div>
+            </div>
+            <div class="slids">
+              <div class="img_slider_popup slick-slide">
+                <img class="img-fluid" src="img/slider3.jpg" alt="hotel">
+              </div>
+            </div>
+            <div class="slids">
+              <div class="img_slider_popup slick-slide">
+                <img class="img-fluid" src="img/slider4.jpg" alt="hotel">
+              </div>
+            </div>
+            <div class="slids">
+              <div class="img_slider_popup slick-slide">
+                <img class="img-fluid" src="img/slider5.jpg" alt="hotel">
+              </div>
+            </div>
+            <div class="slids">
+              <div class="img_slider_popup slick-slide">
+                <img class="img-fluid" src="img/slider6.jpg" alt="hotel">
+              </div>
+            </div>
+            <div class="slids">
+              <div class="img_slider_popup slick-slide">
+                <img class="img-fluid" src="img/slider7.jpg" alt="hotel">
+              </div>
             </div>
           </div>
-          <div class="slids">
-            <div class="img_slider_popup">
-              <img class="img-fluid" src="img/slider2.jpg" alt="hotel">
-            </div>
-          </div>
-          <div class="slids">
-            <div class="img_slider_popup">
-              <img class="img-fluid" src="img/slider3.jpg" alt="hotel">
-            </div>
-          </div>
-          <div class="slids">
-            <div class="img_slider_popup">
-              <img class="img-fluid" src="img/slider4.jpg" alt="hotel">
-            </div>
-          </div>
-          <div class="slids">
-            <div class="img_slider_popup">
-              <img class="img-fluid" src="img/slider5.jpg" alt="hotel">
-            </div>
-          </div>
+          <button class="carousel_nav btn_next"><i class="fas fa-chevron-right"></i></button>
+          <button class="carousel_nav btn_prev"><i class="fas fa-chevron-left"></i></button>
         </div>
-        <button class="carousel_nav btn_next"><i class="fas fa-chevron-right"></i></button>
-        <button class="carousel_nav btn_prev"><i class="fas fa-chevron-left"></i></button>
       </div>
-      <div class="col-md-6 col-12">
-        <h3 class="image_name">defdfdf</h3>
+      <div class="col-md-5 col-12">
+        <h3 class="image_name">slider1.jpg</h3>
       </div>
     </div>
   </section>
