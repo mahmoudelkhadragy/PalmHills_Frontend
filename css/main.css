@@ -217,29 +217,60 @@ header .logo_header {
   z-index: 333;
 }
 
+
 .sidebar {
   position: fixed;
   top: 0;
-  left: -220px;
-  width: 220px;
+  left: -3000px;
+  width: 100%;
   height: 100%;
   z-index: 333;
   background-color: #D71144;
 }
 
-.sidebar ul {
-  margin-top: 70px;
+.close_sidebar {
+  display: inline-block;
+  font-size: 19px;
+  padding: 5px;
+  cursor: pointer;
+  margin: 30px;
+}
+
+.sidebar .main_sidebar_ul {
+  text-align: center;
+  margin: 60px auto 0 auto;
 }
 
 .sidebar li.sidebar_link {
-  padding: 10px;
+  padding: 10px 0;
+}
+
+.sidebar_link span {
+  margin-right: 10px;
+  color: #fff;
+  padding: 5px;
+  font-size: 11px;
+  cursor: pointer;
 }
 
 .sidebar li a {
   color: #fff;
+  font-size: 13px;
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: 200;
+}
+
+.sub_sidebar_ul {
+  display: none;
+}
+
+.sub_sidebar_ul li {
+  padding: 5px 0;
+}
+
+.minus {
+  display: none;
 }
 
 .sidebar .sidebar_active {

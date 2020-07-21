@@ -3,22 +3,28 @@ $(document).ready(function () {
   var scrollButton = $('.scrole_up_icon'),
     specialPopup = $('.special_popup');
 
-  $('.sidebar_icon').click(function () {
+  $('.close_sidebar').click(function () {
     $('.sidebar').animate({
-      left: "0"
+      'left': "-3000px"
     });
   });
 
-  $(document).mouseup(function (e) {
-    var sidebar = $('.sidebar');
-    if (sidebar.css('left') === "0px") {
-      // If the target of the click isn't the container
-      if (!sidebar.is(e.target) && sidebar.has(e.target).length === 0) {
-        sidebar.animate({
-          left: "-220px"
-        });
-      }
-    }
+  $('.sidebar_icon').click(function () {
+    $('.sidebar').animate({
+      'left': "0"
+    });
+  });
+
+  $('.plus').click(function () {
+    $(this).hide();
+    $(this).siblings('.minus').show();
+    $(this).siblings('.sub_sidebar_ul').show();
+  });
+
+  $('.minus').click(function () {
+    $(this).hide();
+    $(this).siblings('.plus').show();
+    $(this).siblings('.sub_sidebar_ul').hide();
   });
 
   $(window).scroll(function () {
