@@ -36,20 +36,20 @@ $(document).ready(function () {
   });
 
   // submenu
-  $('.main_li').hover(function () {
-    if ($(this).children('a').text() !== 'Home') {
-      $(this).find('.sub_div').show();
+  $('.main_li a').hover(function (e) {
+    if ($(this).text() !== 'Home') {
+      $(this).siblings('.sub_div').show();
     }
-  }, function () {
-    var subMenu = $(this).find('.sub_div');
-    if ($(this).children('a').text() !== 'Home') {
+  }, function (e) {
+    var subMenu = $(this).siblings('.sub_div');
+    if ($(this).text() !== 'Home') {
       subMenu.hide();
     }
   });
 
-  $('.sub_div').hover(function () {
+  $('.sub_div').hover(function (e) {
     $(this).show();
-  }, function () {
+  }, function (e) {
     $(this).hide();
   });
 
