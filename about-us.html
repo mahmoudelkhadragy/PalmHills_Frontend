@@ -1,231 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PalmHills</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PalmHills</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//db.onlinewebfonts.com/c/77d394fa0c1103c648f880b77cb4a32f?family=FuturaLTW01-Medium"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/fontawesome-all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- our style -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="//db.onlinewebfonts.com/c/77d394fa0c1103c648f880b77cb4a32f?family=FuturaLTW01-Medium" rel="stylesheet"
-    type="text/css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,700&display=swap"
-    rel="stylesheet">
-  <!-- fontawesome -->
-  <link rel="stylesheet" href="css/fontawesome-all.min.css">
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- our style -->
-  <link rel="stylesheet" href="css/main.css">
-</head>
-
-<body>
-  <!-- ScroleUp button mobile only -->
-  <span class="scrole_up_icon">
-    <i class="fas fa-chevron-up"></i>
-  </span>
-  <!-- Header Section -->
-  <header>
-    <div class="logo_header">
-      <img src="img/logo.png" alt="logo">
-    </div>
-  </header>
-  <!-- sidebar section for mobile -->
-  <span class="sidebar_icon visible-xs">
-    <i class="fas fa-bars"></i>
-  </span>
-  <div class="sidebar visible-xs">
-    <ul class="list-unstyled">
-      <li class="sidebar_link sidebar_active">
-        <a class="sidebar_a sidebar_active" href="#">Home</a>
-      </li>
-      <li class="sidebar_link">
-        <a class="sidebar_a " href="#">About Us</a>
-      </li>
-      <li class="sidebar_link">
-        <a class="sidebar_a " href="#">Contact Us</a>
-      </li>
-    </ul>
-  </div>
-
-  <!-- Navbar -->
-  <!-- Navbar -->
-  <nav class="navbar hidden-xs">
-    <div class="container">
-      <ul class="list-unstyled main_ul">
-        <li class="nav_link main_li active_link">
-          <a href="#">Home</a>
+  <body>
+    <!-- ScroleUp button mobile only -->
+    <span class="scrole_up_icon">
+      <i class="fas fa-chevron-up"></i>
+    </span>
+    <!-- Header Section -->
+    <header>
+      <div class="logo_header">
+        <img src="img/logo.png" alt="logo" />
+      </div>
+    </header>
+    <!-- sidebar section for mobile -->
+    <span class="sidebar_icon visible-xs">
+      <i class="fas fa-bars"></i>
+    </span>
+    <div class="sidebar visible-xs">
+      <ul class="list-unstyled">
+        <li class="sidebar_link sidebar_active">
+          <a class="sidebar_a sidebar_active" href="index.html">Home</a>
         </li>
-        <li class="nav_link main_li">
-          <a href="#">About Us</a>
-          <div class="sub_div">
-            <ul class="list-unstyled sub_ul">
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-            </ul>
-          </div>
+        <li class="sidebar_link">
+          <a class="sidebar_a" href="about-us.html">About Us</a>
         </li>
-        <li class="nav_link main_li">
-          <a href="#">Contact Us</a>
-          <div class="sub_div">
-            <ul class="list-unstyled sub_ul">
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="nav_link main_li">
-          <a href="#">More</a>
-          <div class="sub_div">
-            <ul class="list-unstyled sub_ul">
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-            </ul>
-          </div>
+        <li class="sidebar_link">
+          <a class="sidebar_a" href="contact-us.html">Contact Us</a>
         </li>
       </ul>
     </div>
-  </nav>
 
-  <!-- about Us -->
-  <section class="about_us">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5 col-12">
-          <div class="img_about">
-            <img class="img-fluid image_card" src="./img/about1.png" alt="hotel">
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="navbar hidden-xs">
+      <div class="container">
+        <ul class="list-unstyled main_ul">
+          <li class="nav_link main_li active_link">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav_link main_li">
+            <a href="about-us.html">About Us</a>
+            <div class="sub_div">
+              <ul class="list-unstyled sub_ul">
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav_link main_li">
+            <a href="contact-us.html">Contact Us</a>
+            <div class="sub_div">
+              <ul class="list-unstyled sub_ul">
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav_link main_li">
+            <a href="#">More</a>
+            <div class="sub_div">
+              <ul class="list-unstyled sub_ul">
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- about Us -->
+    <section class="about_us">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 col-12">
+            <div class="img_about">
+              <img
+                class="img-fluid image_card"
+                src="./img/about1.png"
+                alt="hotel"
+              />
+            </div>
           </div>
-        </div>
-        <div class="col-md-7 col-12">
-          <div class="info_about">
-            <h3>About Palm Hills Developments</h3>
-            <p>
-              Following a vision to create self-sufficient and well integrated communities in Egypt, Palm Hills
-              Developments became an ever-growing leader in integrated residential, commercial real estate and resort
-              projects since 1997.
-              Today we possess one of the largest land banks in the country, and an impressive roster of 29 projects in
-              West Cairo, East Cairo, the North Coast and the Red Sea.
-              Palm Hills Developments is listed on the Egyptian Stock Exchange and London Stock Exchange, traded under
-              the symbols "PHDC.CA" and "PHDC.LI" respectively.
-            </p>
-            <h3>Vision & Mission</h3>
-            <p>
-              To become the real estate developer of choice that others aspire to be
-              To be the region's most influential developer that delivers premium quality projects with highest return
-              on investment for our shareholders and clients, providing the best work environment for our employees
-            </p>
+          <div class="col-md-7 col-12">
+            <div class="info_about">
+              <h3>About Palm Hills Developments</h3>
+              <p>
+                Following a vision to create self-sufficient and well integrated
+                communities in Egypt, Palm Hills Developments became an
+                ever-growing leader in integrated residential, commercial real
+                estate and resort projects since 1997. Today we possess one of
+                the largest land banks in the country, and an impressive roster
+                of 29 projects in West Cairo, East Cairo, the North Coast and
+                the Red Sea. Palm Hills Developments is listed on the Egyptian
+                Stock Exchange and London Stock Exchange, traded under the
+                symbols "PHDC.CA" and "PHDC.LI" respectively.
+              </p>
+              <h3>Vision & Mission</h3>
+              <p>
+                To become the real estate developer of choice that others aspire
+                to be To be the region's most influential developer that
+                delivers premium quality projects with highest return on
+                investment for our shareholders and clients, providing the best
+                work environment for our employees
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="col-md-5 col-12">
-          <div class="img_about">
-            <img class="img-fluid image_card mt-5" src="./img/about2.png" alt="hotel">
+          <div class="col-md-5 col-12">
+            <div class="img_about">
+              <img
+                class="img-fluid image_card mt-5"
+                src="./img/about2.png"
+                alt="hotel"
+              />
+            </div>
           </div>
-        </div>
-        <div class="col-md-7 col-12">
-          <div class="info_about">
-            <h3>Corporate Strategy</h3>
-            <p>
-              The company’s strategy is comprised of four pillars, namely Growth, Earnings Stabilization &
-              Diversification, Improving Profitability and Expediting Projects' Delivery. Through the "Growth" pillar,
-              the Company is exploring new large land banks within its development regions being West Cairo, East Cairo
-              and North Coast to further expand its current development portfolio either through direct land auctions
-              sponsored by the Egyptian Government, acquisitions from the private sector or co-development opportunities
-              with land lords, securing the Company's future pipeline of residential and commercial offerings.
-              <br>
-              To enhance the "Earnings Stabilization & Diversification" pillar, the Company has set-Up Palm Hills
-              Investments ("PHI") during 2015 with the purpose of deploying existing raw land that have been allocated
-              as investment property and commercial real estate throughout completed developments and projects under
-              development. Palm Hills has allocated c.757,000 sqm as a starting point for commercial projects. The
-              Company is targeting developments in the following segments: neighborhood and community malls, office
-              buildings, leisure facilities, health & education, and selective hotel properties.
-              <br>
-              With regards to "Improving Profitability" pillar, having recently revisited its future development plans,
-              Palm Hills is currently exiting untapped real estate investments and unutilized land plots that are no
-              longer fit within the future development program, while at the same manner increasing land bank and
-              enhancing cash flows in existing projects.
-              <br>
-              Within the "Expediting Projects Delivery" pillar, the Company is continuing its accelerated construction
-              program to speed up delivery which commenced in 2014 and is targeting to complete all projects under
-              development by end of 2017/early 2018.
-            </p>
+          <div class="col-md-7 col-12">
+            <div class="info_about">
+              <h3>Corporate Strategy</h3>
+              <p>
+                The company’s strategy is comprised of four pillars, namely
+                Growth, Earnings Stabilization & Diversification, Improving
+                Profitability and Expediting Projects' Delivery. Through the
+                "Growth" pillar, the Company is exploring new large land banks
+                within its development regions being West Cairo, East Cairo and
+                North Coast to further expand its current development portfolio
+                either through direct land auctions sponsored by the Egyptian
+                Government, acquisitions from the private sector or
+                co-development opportunities with land lords, securing the
+                Company's future pipeline of residential and commercial
+                offerings.
+                <br />
+                To enhance the "Earnings Stabilization & Diversification"
+                pillar, the Company has set-Up Palm Hills Investments ("PHI")
+                during 2015 with the purpose of deploying existing raw land that
+                have been allocated as investment property and commercial real
+                estate throughout completed developments and projects under
+                development. Palm Hills has allocated c.757,000 sqm as a
+                starting point for commercial projects. The Company is targeting
+                developments in the following segments: neighborhood and
+                community malls, office buildings, leisure facilities, health &
+                education, and selective hotel properties.
+                <br />
+                With regards to "Improving Profitability" pillar, having
+                recently revisited its future development plans, Palm Hills is
+                currently exiting untapped real estate investments and
+                unutilized land plots that are no longer fit within the future
+                development program, while at the same manner increasing land
+                bank and enhancing cash flows in existing projects.
+                <br />
+                Within the "Expediting Projects Delivery" pillar, the Company is
+                continuing its accelerated construction program to speed up
+                delivery which commenced in 2014 and is targeting to complete
+                all projects under development by end of 2017/early 2018.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="col-md-5 col-12">
-          <div class="img_about">
-            <img class="img-fluid image_card" src="./img/about3.png" alt="hotel">
+          <div class="col-md-5 col-12">
+            <div class="img_about">
+              <img
+                class="img-fluid image_card"
+                src="./img/about3.png"
+                alt="hotel"
+              />
+            </div>
           </div>
-        </div>
-        <div class="col-md-7 col-12">
-          <div class="info_about">
-            <h3>Our Portfolio</h3>
-            <p>
-              Spanning over 13.3 million sqm, our portfolio is a showcase of masterful creativity and architectural
-              finesse. It encompasses twelve projects, including Palm Hills October, Golf Views, Golf Extension,
-              Woodville, Palm Parks, Palm Valley and CASA; to accommodate 5,600 households. Unit Spaces vary from 150
-              sqm Up to 2,000 sqm. With an aim to turn our clients' dreams into a reality, 70% of the projects' lands
-              are allocated for lush greenery and multifaceted creative landscapes. Taking another extra mile to appease
-              our clients' diverse wish list, West Cairo projects have also dedicated 197k sqm to services and retail
-              facilities to serve Palm Hills' residents and visitors.
-            </p>
+          <div class="col-md-7 col-12">
+            <div class="info_about">
+              <h3>Our Portfolio</h3>
+              <p>
+                Spanning over 13.3 million sqm, our portfolio is a showcase of
+                masterful creativity and architectural finesse. It encompasses
+                twelve projects, including Palm Hills October, Golf Views, Golf
+                Extension, Woodville, Palm Parks, Palm Valley and CASA; to
+                accommodate 5,600 households. Unit Spaces vary from 150 sqm Up
+                to 2,000 sqm. With an aim to turn our clients' dreams into a
+                reality, 70% of the projects' lands are allocated for lush
+                greenery and multifaceted creative landscapes. Taking another
+                extra mile to appease our clients' diverse wish list, West Cairo
+                projects have also dedicated 197k sqm to services and retail
+                facilities to serve Palm Hills' residents and visitors.
+              </p>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <footer class="text-center">
+      <div class="container">
+        <p class="general_p">2020 by ourdevelopments-eg</p>
+        <p class="general_p">
+          <img src="img/facbook.png" alt="facebook logo" />
+        </p>
+        <p class="general_p">
+          Lorem ipsum, dolor sit amet consectetur adipisici
+        </p>
+      </div>
+    </footer>
+
+    <!-- contact us for mobile -->
+    <a
+      class="contact_for_mobile text-center visible-xs"
+      href="./contact-us.html"
+    >
+      <p class="general_p"><i class="far fa-list-alt"></i></p>
+      <p class="general_p">Contact Form</p>
+    </a>
+
+    <!-- special launching offer pop up -->
+    <div class="special_popup">
+      <div class="special_popup_content">
+        <span class="close_special_popup"><i class="fas fa-times"></i></span>
+        <div class="clearfix"></div>
+        <h2>
+          Special <br />
+          Launching <br />
+          offer
+        </h2>
+        <a class="special_popup_link" href="./contact-us.html">Go</a>
+      </div>
     </div>
-  </section>
 
-
-  <footer class="text-center">
-    <div class="container">
-      <p class="general_p"> 2020 by ourdevelopments-eg </p>
-      <p class="general_p"> <img src="img/facbook.png" alt="facebook logo"> </p>
-      <p class="general_p"> Lorem ipsum, dolor sit amet consectetur adipisici </p>
-    </div>
-  </footer>
-
-  <!-- contact us for mobile -->
-  <a class="contact_for_mobile text-center visible-xs" href="./contact-us.html">
-    <p class="general_p"><i class="far fa-list-alt"></i></p>
-    <p class="general_p">Contact Form</p>
-  </a>
-
-  <!-- special launching offer pop up -->
-  <div class="special_popup">
-    <div class="special_popup_content">
-      <span class="close_special_popup"><i class="fas fa-times"></i></span>
-      <div class="clearfix"></div>
-      <h2>Special <br> Launching <br> offer</h2>
-      <a class="special_popup_link" href="./contact-us.html">Go</a>
-    </div>
-  </div>
-
-
-  <script src="js/jquery-3.5.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <!-- video.js -->
-  <script src="https://vjs.zencdn.net/7.8.3/video.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- video.js -->
+    <script src="https://vjs.zencdn.net/7.8.3/video.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

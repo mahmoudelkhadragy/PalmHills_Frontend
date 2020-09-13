@@ -1,617 +1,744 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PalmHills</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PalmHills</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//db.onlinewebfonts.com/c/77d394fa0c1103c648f880b77cb4a32f?family=FuturaLTW01-Medium"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/fontawesome-all.min.css" />
+    <!-- video-js.css -->
+    <link href="css/video-js.css" rel="stylesheet" />
+    <!-- videojs-matrix.css -->
+    <link href="css/videojs-matrix.css" rel="stylesheet" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- slick.css -->
+    <link rel="stylesheet" href="css/slick.css" />
+    <!-- slick-theme -->
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <!-- our style -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="//db.onlinewebfonts.com/c/77d394fa0c1103c648f880b77cb4a32f?family=FuturaLTW01-Medium" rel="stylesheet"
-    type="text/css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,700&display=swap"
-    rel="stylesheet">
-  <!-- fontawesome -->
-  <link rel="stylesheet" href="css/fontawesome-all.min.css">
-  <!-- video-js.css -->
-  <link href="css/video-js.css" rel="stylesheet" />
-  <!-- videojs-matrix.css -->
-  <link href="css/videojs-matrix.css" rel="stylesheet" />
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- slick.css -->
-  <link rel="stylesheet" href="css/slick.css">
-  <!-- slick-theme -->
-  <link rel="stylesheet" href="css/slick-theme.css">
-  <!-- our style -->
-  <link rel="stylesheet" href="css/main.css">
-</head>
-
-<body>
-  <!-- ScroleUp button mobile only -->
-  <span class="scrole_up_icon">
-    <i class="fas fa-chevron-up"></i>
-  </span>
-  <!-- Header Section -->
-  <header>
-    <div class="logo_header">
-      <img src="img/logo.png" alt="logo">
-    </div>
-  </header>
-  <!-- sidebar section for mobile -->
-  <span class="sidebar_icon visible-xs">
-    <i class="fas fa-bars"></i>
-  </span>
-  <div class="sidebar visible-xs">
-    <span class="close_sidebar"><i class="fas fa-times"></i></span>
-    <ul class="list-unstyled main_sidebar_ul">
-      <li class="sidebar_link sidebar_active">
-        <a class="sidebar_a sidebar_active" href="#">Home</a>
-      </li>
-
-      <li class="sidebar_link">
-        <span class="plus"><i class="fas fa-plus"></i></span>
-        <span class="minus"><i class="fas fa-minus"></i></span>
-        <a class="sidebar_a" href="#">About Us</a>
-
-        <ul class="list-unstyled sub_sidebar_ul">
-          <li class="sublink">
-            <a class="sidebar_a" href="#">Hacienda</a>
-          </li>
-          <li class="sublink">
-            <a class="sidebar_a" href="#">Hacienda</a>
-          </li>
-        </ul>
-      </li>
-
-
-      <li class="sidebar_link">
-        <span class="plus"><i class="fas fa-plus"></i></span>
-        <span class="minus"><i class="fas fa-minus"></i></span>
-        <a class="sidebar_a " href="#">Contact Us</a>
-        <ul class="list-unstyled sub_sidebar_ul">
-          <li class="sublink">
-            <a class="sidebar_a" href="#">Hacienda</a>
-          </li>
-          <li class="sublink">
-            <a class="sidebar_a" href="#">Hacienda</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-
-  <!-- Navbar -->
-  <nav class="navbar hidden-xs">
-    <div class="container">
-      <ul class="list-unstyled main_ul">
-        <li class="nav_link main_li active_link">
-          <a href="#">Home</a>
+  <body>
+    <!-- ScroleUp button mobile only -->
+    <span class="scrole_up_icon">
+      <i class="fas fa-chevron-up"></i>
+    </span>
+    <!-- Header Section -->
+    <header>
+      <div class="logo_header">
+        <img src="img/logo.png" alt="logo" />
+      </div>
+    </header>
+    <!-- sidebar section for mobile -->
+    <span class="sidebar_icon visible-xs">
+      <i class="fas fa-bars"></i>
+    </span>
+    <div class="sidebar visible-xs">
+      <span class="close_sidebar"><i class="fas fa-times"></i></span>
+      <ul class="list-unstyled main_sidebar_ul">
+        <li class="sidebar_link sidebar_active">
+          <a class="sidebar_a sidebar_active" href="#">Home</a>
         </li>
-        <li class="nav_link main_li">
-          <a href="#">About Us</a>
-          <div class="sub_div">
-            <ul class="list-unstyled sub_ul">
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-            </ul>
-          </div>
+
+        <li class="sidebar_link">
+          <span class="plus"><i class="fas fa-plus"></i></span>
+          <span class="minus"><i class="fas fa-minus"></i></span>
+          <a class="sidebar_a" href="about-us.html">About Us</a>
+
+          <ul class="list-unstyled sub_sidebar_ul">
+            <li class="sublink">
+              <a class="sidebar_a" href="#">Hacienda</a>
+            </li>
+            <li class="sublink">
+              <a class="sidebar_a" href="#">Hacienda</a>
+            </li>
+          </ul>
         </li>
-        <li class="nav_link main_li">
-          <a href="#">Contact Us</a>
-          <div class="sub_div">
-            <ul class="list-unstyled sub_ul">
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="nav_link main_li">
-          <a href="#">More</a>
-          <div class="sub_div">
-            <ul class="list-unstyled sub_ul">
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-            </ul>
-          </div>
+
+        <li class="sidebar_link">
+          <span class="plus"><i class="fas fa-plus"></i></span>
+          <span class="minus"><i class="fas fa-minus"></i></span>
+          <a class="sidebar_a" href="contact-us.html">Contact Us</a>
+          <ul class="list-unstyled sub_sidebar_ul">
+            <li class="sublink">
+              <a class="sidebar_a" href="#">Hacienda</a>
+            </li>
+            <li class="sublink">
+              <a class="sidebar_a" href="#">Hacienda</a>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
-  </nav>
 
-  <!-- Our Developments Section -->
-  <section class="developments text-center">
-    <div class="container">
-      <h2 class="head_red">Our Developments</h2>
+    <!-- Navbar -->
+    <nav class="navbar hidden-xs">
+      <div class="container">
+        <ul class="list-unstyled main_ul">
+          <li class="nav_link main_li active_link">
+            <a href="#">Home</a>
+          </li>
+          <li class="nav_link main_li">
+            <a href="about-us.html">About Us</a>
+            <div class="sub_div">
+              <ul class="list-unstyled sub_ul">
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav_link main_li">
+            <a href="contact-us.html">Contact Us</a>
+            <div class="sub_div">
+              <ul class="list-unstyled sub_ul">
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav_link main_li">
+            <a href="#">More</a>
+            <div class="sub_div">
+              <ul class="list-unstyled sub_ul">
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Our Developments Section -->
+    <section class="developments text-center">
+      <div class="container">
+        <h2 class="head_red">Our Developments</h2>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-12">
+            <div class="card_place">
+              <div class="img_part">
+                <img
+                  class="img-fluid image_card"
+                  src="img/card1.png"
+                  alt="west cairo"
+                />
+              </div>
+              <div class="info_part">
+                <h5 class="head_card">West Cairo</h5>
+                <button class="general_btn btn_red">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <div class="card_place">
+              <div class="img_part">
+                <img
+                  class="img-fluid image_card"
+                  src="img/card2.png"
+                  alt="west cairo"
+                />
+              </div>
+              <div class="info_part">
+                <h5 class="head_card">East Cairo</h5>
+                <button class="general_btn btn_red">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <div class="card_place">
+              <div class="img_part">
+                <img
+                  class="img-fluid image_card"
+                  src="img/card3.png"
+                  alt="west cairo"
+                />
+              </div>
+              <div class="info_part">
+                <h5 class="head_card head_fix_m">North Coast & Alexandria</h5>
+                <button class="general_btn btn_red">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <div class="card_place">
+              <div class="img_part">
+                <img
+                  class="img-fluid image_card"
+                  src="img/card4.png"
+                  alt="west cairo"
+                />
+              </div>
+              <div class="info_part">
+                <h5 class="head_card">Red Sea | Sokhna</h5>
+                <button class="general_btn btn_red">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Family Logos Section -->
+    <section class="family_logos">
+      <div class="container">
+        <h2 class="head_white">Palm Hills Family</h2>
+        <div class="row">
+          <div class="col-sm-4 col-6">
+            <div class="family_img">
+              <img class="img-fluid" src="img/prands1.png" alt="logo" />
+            </div>
+          </div>
+          <div class="col-sm-4 col-6">
+            <div class="family_img">
+              <img class="img-fluid" src="img/prands2.png" alt="logo" />
+            </div>
+          </div>
+          <div class="col-sm-4 col-6">
+            <div class="family_img">
+              <img class="img-fluid" src="img/prands3.png" alt="logo" />
+            </div>
+          </div>
+          <div class="col-sm-4 col-6">
+            <div class="family_img">
+              <img class="img-fluid" src="img/prands4.png" alt="logo" />
+            </div>
+          </div>
+          <div class="col-sm-4 col-6">
+            <div class="family_img">
+              <img class="img-fluid" src="img/prands5.png" alt="logo" />
+            </div>
+          </div>
+          <div class="col-sm-4 col-6">
+            <div class="family_img">
+              <img class="img-fluid" src="img/prands6.png" alt="logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exclusive Offers -->
+    <section class="exclusive_offers">
+      <div class="container">
+        <h2 class="head_white">
+          Click Below <br />
+          For Exclusive Offer
+        </h2>
+        <div class="offer_form">
+          <form>
+            <div class="form-row">
+              <div class="col-sm-6 col-12">
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+              <div class="col-sm-6 col-12">
+                <input type="number" class="form-control" placeholder="Phone" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-sm-6 col-12">
+                <input type="email" class="form-control" placeholder="Email" />
+              </div>
+              <div class="col-sm-6 col-12">
+                <select class="custom-select" id="validationDefault04" required>
+                  <option selected disabled value="">
+                    Choose Property Type
+                  </option>
+                  <option>Apartment</option>
+                  <option>Townhouse</option>
+                  <option>Penthouse</option>
+                  <option>TwinVilla</option>
+                  <option>StandaloneVilla</option>
+                  <option>Chalel</option>
+                  <option>Commercial</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-sm-6 col-12">
+                <textarea
+                  class="form-control"
+                  rows="3"
+                  placeholder="Let us know what you need help with..."
+                ></textarea>
+              </div>
+              <div class="col-sm-6 col-12">
+                <div class="radio_check">
+                  <p class="radio_head">Choose Location*</p>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="newCairo"
+                      value="option1"
+                      checked
+                    />
+                    <label class="form-check-label" for="newCairo">
+                      New Cairo
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="sheikhZayed"
+                      value="option2"
+                    />
+                    <label class="form-check-label" for="sheikhZayed">
+                      Sheikh Zayed | 6th October
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="northCoast"
+                      value="option2"
+                    />
+                    <label class="form-check-label" for="northCoast">
+                      North Coast
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-sm-6 col-12">
+                <button class="general_btn btn_white">Click Here</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- video section -->
+    <section class="video_section">
+      <div class="container">
+        <div class="video_slider_container">
+          <div class="video_slider">
+            <div class="video_item">
+              <video
+                id="my-video"
+                class="video-js"
+                controls
+                preload="auto"
+                width="910"
+                height="550"
+                poster="MY_VIDEO_POSTER.jpg"
+                data-setup="{}"
+              >
+                <source src="img/video1.mp4" type="video/mp4" />
+                <source src="img/video1.webm" type="video/webm" />
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider
+                  upgrading to a web browser that
+                  <a
+                    href="https://videojs.com/html5-video-support/"
+                    target="_blank"
+                    >supports HTML5 video</a
+                  >
+                </p>
+              </video>
+              <div class="video_controls_icons">
+                <span class="bar_video"><i class="fas fa-bars"></i></span>
+                <div class="controls_video_div">
+                  <span class="share_v_icon"
+                    ><i class="fas fa-share-alt"></i
+                  ></span>
+                  <span class="info_v_icon"><i class="fas fa-info"></i></span>
+                  <span class="close_v_icon"><i class="fas fa-times"></i></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="video_item">
+              <video
+                id="my-video"
+                class="video-js"
+                controls
+                preload="auto"
+                width="910"
+                height="550"
+                poster="MY_VIDEO_POSTER.jpg"
+                data-setup="{}"
+              >
+                <source src="img/video1.mp4" type="video/mp4" />
+                <source src="img/video1.webm" type="video/webm" />
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider
+                  upgrading to a web browser that
+                  <a
+                    href="https://videojs.com/html5-video-support/"
+                    target="_blank"
+                    >supports HTML5 video</a
+                  >
+                </p>
+              </video>
+              <div class="video_controls_icons">
+                <span class="bar_video"><i class="fas fa-bars"></i></span>
+                <div class="controls_video_div">
+                  <span class="share_v_icon"
+                    ><i class="fas fa-share-alt"></i
+                  ></span>
+                  <span class="info_v_icon"><i class="fas fa-info"></i></span>
+                  <span class="close_v_icon"><i class="fas fa-times"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel_nav video_next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <button class="carousel_nav video_prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--  Hacienda image slider section -->
+    <section class="image_slider">
+      <h2 class="head_white my-3">Palm Hills Hacienda Bay</h2>
+      <div class="slider">
+        <div class="item">
+          <div class="center_items">
+            <img class="img-fluid" src="img/slider1.jpg" alt="hotel" />
+            <div class="social_share">
+              <div class="social_share_container">
+                <span class="heart_not_solid"
+                  ><i class="far fa-heart"></i
+                ></span>
+                <span class="heart_solid"><i class="fas fa-heart"></i></span>
+                <span class="download_icon"
+                  ><i class="fas fa-download"></i
+                ></span>
+                <span class="share_icon"><i class="fas fa-share"></i></span>
+              </div>
+              <div class="social_share_links">
+                <span><i class="fab fa-facebook-f"></i></span>
+                <span><i class="fab fa-twitter"></i></span>
+                <span><i class="fab fa-pinterest"></i></span>
+                <span><i class="fab fa-tumblr"></i></span>
+                <span><i class="far fa-envelope"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="center_items">
+            <img class="img-fluid" src="img/slider2.jpg" alt="hotel" />
+            <div class="social_share">
+              <div class="social_share_container">
+                <span class="heart_not_solid"
+                  ><i class="far fa-heart"></i
+                ></span>
+                <span class="heart_solid"><i class="fas fa-heart"></i></span>
+                <span class="download_icon"
+                  ><i class="fas fa-download"></i
+                ></span>
+                <span class="share_icon"><i class="fas fa-share"></i></span>
+              </div>
+              <div class="social_share_links">
+                <span><i class="fab fa-facebook-f"></i></span>
+                <span><i class="fab fa-twitter"></i></span>
+                <span><i class="fab fa-pinterest"></i></span>
+                <span><i class="fab fa-tumblr"></i></span>
+                <span><i class="far fa-envelope"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="center_items">
+            <img class="img-fluid" src="img/slider3.jpg" alt="hotel" />
+            <div class="social_share">
+              <div class="social_share_container">
+                <span class="heart_not_solid"
+                  ><i class="far fa-heart"></i
+                ></span>
+                <span class="heart_solid"><i class="fas fa-heart"></i></span>
+                <span class="download_icon"
+                  ><i class="fas fa-download"></i
+                ></span>
+                <span class="share_icon"><i class="fas fa-share"></i></span>
+              </div>
+              <div class="social_share_links">
+                <span><i class="fab fa-facebook-f"></i></span>
+                <span><i class="fab fa-twitter"></i></span>
+                <span><i class="fab fa-pinterest"></i></span>
+                <span><i class="fab fa-tumblr"></i></span>
+                <span><i class="far fa-envelope"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="center_items">
+            <img class="img-fluid" src="img/slider4.jpg" alt="hotel" />
+            <div class="social_share">
+              <div class="social_share_container">
+                <span class="heart_not_solid"
+                  ><i class="far fa-heart"></i
+                ></span>
+                <span class="heart_solid"><i class="fas fa-heart"></i></span>
+                <span class="download_icon"
+                  ><i class="fas fa-download"></i
+                ></span>
+                <span class="share_icon"><i class="fas fa-share"></i></span>
+              </div>
+              <div class="social_share_links">
+                <span><i class="fab fa-facebook-f"></i></span>
+                <span><i class="fab fa-twitter"></i></span>
+                <span><i class="fab fa-pinterest"></i></span>
+                <span><i class="fab fa-tumblr"></i></span>
+                <span><i class="far fa-envelope"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="center_items">
+            <img class="img-fluid" src="img/slider5.jpg" alt="hotel" />
+            <div class="social_share">
+              <div class="social_share_container">
+                <span class="heart_not_solid"
+                  ><i class="far fa-heart"></i
+                ></span>
+                <span class="heart_solid"><i class="fas fa-heart"></i></span>
+                <span class="download_icon"
+                  ><i class="fas fa-download"></i
+                ></span>
+                <span class="share_icon"><i class="fas fa-share"></i></span>
+              </div>
+              <div class="social_share_links">
+                <span><i class="fab fa-facebook-f"></i></span>
+                <span><i class="fab fa-twitter"></i></span>
+                <span><i class="fab fa-pinterest"></i></span>
+                <span><i class="fab fa-tumblr"></i></span>
+                <span><i class="far fa-envelope"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="center_items">
+            <img class="img-fluid" src="img/slider6.jpg" alt="hotel" />
+            <div class="social_share">
+              <div class="social_share_container">
+                <span class="heart_not_solid"
+                  ><i class="far fa-heart"></i
+                ></span>
+                <span class="heart_solid"><i class="fas fa-heart"></i></span>
+                <span class="download_icon"
+                  ><i class="fas fa-download"></i
+                ></span>
+                <span class="share_icon"><i class="fas fa-share"></i></span>
+              </div>
+              <div class="social_share_links">
+                <span><i class="fab fa-facebook-f"></i></span>
+                <span><i class="fab fa-twitter"></i></span>
+                <span><i class="fab fa-pinterest"></i></span>
+                <span><i class="fab fa-tumblr"></i></span>
+                <span><i class="far fa-envelope"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="center_items">
+            <img class="img-fluid" src="img/slider7.jpg" alt="hotel" />
+            <div class="social_share">
+              <div class="social_share_container">
+                <span class="heart_not_solid"
+                  ><i class="far fa-heart"></i
+                ></span>
+                <span class="heart_solid"><i class="fas fa-heart"></i></span>
+                <span class="download_icon"
+                  ><i class="fas fa-download"></i
+                ></span>
+                <span class="share_icon"><i class="fas fa-share"></i></span>
+              </div>
+              <div class="social_share_links">
+                <span><i class="fab fa-facebook-f"></i></span>
+                <span><i class="fab fa-twitter"></i></span>
+                <span><i class="fab fa-pinterest"></i></span>
+                <span><i class="fab fa-tumblr"></i></span>
+                <span><i class="far fa-envelope"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel_nav carousel_next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <button class="carousel_nav carousel_prev">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+    </section>
+
+    <!-- image slider popup -->
+    <section class="slider_popup_section">
+      <div class="controls">
+        <div class="float-left">
+          <span class="expand_icon"><i class="fas fa-expand"></i></span>
+          <span class="download_icon"><i class="fas fa-download"></i></span>
+          <span class="heart_not_solid_popup"
+            ><i class="far fa-heart"></i
+          ></span>
+          <span class="heart_solid_popup"
+            ><i class="fas fa-heart"></i><span class="likes_number"></span
+          ></span>
+          <span class="share_icon_popup hidden-xs">
+            <i class="fas fa-share"></i>
+            <div class="share_controls_part">
+              <span><i class="fab fa-facebook-f"></i></span>
+              <span><i class="fab fa-twitter"></i></span>
+              <span><i class="fab fa-pinterest"></i></span>
+              <span><i class="fab fa-tumblr"></i></span>
+              <span><i class="far fa-envelope"></i></span>
+            </div>
+          </span>
+        </div>
+        <div class="float-right">
+          <span class="close_popup"><i class="fas fa-times"></i></span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
       <div class="row">
-        <div class="col-md-4 col-sm-6 col-12">
-          <div class="card_place">
-            <div class="img_part">
-              <img class="img-fluid image_card" src="img/card1.png" alt="west cairo">
-            </div>
-            <div class="info_part">
-              <h5 class="head_card">West Cairo</h5>
-              <button class="general_btn btn_red">Learn More</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-12">
-          <div class="card_place">
-            <div class="img_part">
-              <img class="img-fluid image_card" src="img/card2.png" alt="west cairo">
-            </div>
-            <div class="info_part">
-              <h5 class="head_card">East Cairo</h5>
-              <button class="general_btn btn_red">Learn More</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-12">
-          <div class="card_place">
-            <div class="img_part">
-              <img class="img-fluid image_card" src="img/card3.png" alt="west cairo">
-            </div>
-            <div class="info_part">
-              <h5 class="head_card head_fix_m">North Coast & Alexandria</h5>
-              <button class="general_btn btn_red">Learn More</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-12">
-          <div class="card_place">
-            <div class="img_part">
-              <img class="img-fluid image_card" src="img/card4.png" alt="west cairo">
-            </div>
-            <div class="info_part">
-              <h5 class="head_card">Red Sea | Sokhna</h5>
-              <button class="general_btn btn_red">Learn More</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Our Family Logos Section -->
-  <section class="family_logos">
-    <div class="container">
-      <h2 class="head_white">Palm Hills Family</h2>
-      <div class="row">
-        <div class="col-sm-4 col-6">
-          <div class="family_img">
-            <img class="img-fluid" src="img/prands1.png" alt="logo">
-          </div>
-        </div>
-        <div class="col-sm-4 col-6">
-          <div class="family_img">
-            <img class="img-fluid" src="img/prands2.png" alt="logo">
-          </div>
-        </div>
-        <div class="col-sm-4 col-6">
-          <div class="family_img">
-            <img class="img-fluid" src="img/prands3.png" alt="logo">
-          </div>
-        </div>
-        <div class="col-sm-4 col-6">
-          <div class="family_img">
-            <img class="img-fluid" src="img/prands4.png" alt="logo">
-          </div>
-        </div>
-        <div class="col-sm-4 col-6">
-          <div class="family_img">
-            <img class="img-fluid" src="img/prands5.png" alt="logo">
-          </div>
-        </div>
-        <div class="col-sm-4 col-6">
-          <div class="family_img">
-            <img class="img-fluid" src="img/prands6.png" alt="logo">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Exclusive Offers -->
-  <section class="exclusive_offers">
-    <div class="container">
-      <h2 class="head_white">
-        Click Below <br>
-        For Exclusive Offer
-      </h2>
-      <div class="offer_form">
-        <form>
-          <div class="form-row">
-            <div class="col-sm-6 col-12">
-              <input type="text" class="form-control" placeholder="Name">
-            </div>
-            <div class="col-sm-6 col-12">
-              <input type="number" class="form-control" placeholder="Phone">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="col-sm-6 col-12">
-              <input type="email" class="form-control" placeholder="Email">
-            </div>
-            <div class="col-sm-6 col-12">
-              <select class="custom-select" id="validationDefault04" required>
-                <option selected disabled value="">Choose Property Type</option>
-                <option>Apartment</option>
-                <option>Townhouse</option>
-                <option>Penthouse</option>
-                <option>TwinVilla</option>
-                <option>StandaloneVilla</option>
-                <option>Chalel</option>
-                <option>Commercial</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="col-sm-6 col-12">
-              <textarea class="form-control" rows="3" placeholder="Let us know what you need help with..."></textarea>
-            </div>
-            <div class="col-sm-6 col-12">
-              <div class="radio_check">
-                <p class="radio_head">Choose Location*</p>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="newCairo" value="option1"
-                    checked>
-                  <label class="form-check-label" for="newCairo">
-                    New Cairo
-                  </label>
+        <div class="col-md-7 col-12">
+          <div class="popup_slider_container">
+            <div class="slider_popup">
+              <div class="slids">
+                <div class="img_slider_popup slick-slide">
+                  <img class="img-fluid" src="img/slider1.jpg" alt="hotel" />
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="sheikhZayed" value="option2">
-                  <label class="form-check-label" for="sheikhZayed">
-                    Sheikh Zayed | 6th October
-                  </label>
+              </div>
+              <div class="slids">
+                <div class="img_slider_popup slick-slide">
+                  <img class="img-fluid" src="img/slider2.jpg" alt="hotel" />
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="northCoast" value="option2">
-                  <label class="form-check-label" for="northCoast">
-                    North Coast
-                  </label>
+              </div>
+              <div class="slids">
+                <div class="img_slider_popup slick-slide">
+                  <img class="img-fluid" src="img/slider3.jpg" alt="hotel" />
+                </div>
+              </div>
+              <div class="slids">
+                <div class="img_slider_popup slick-slide">
+                  <img class="img-fluid" src="img/slider4.jpg" alt="hotel" />
+                </div>
+              </div>
+              <div class="slids">
+                <div class="img_slider_popup slick-slide">
+                  <img class="img-fluid" src="img/slider5.jpg" alt="hotel" />
+                </div>
+              </div>
+              <div class="slids">
+                <div class="img_slider_popup slick-slide">
+                  <img class="img-fluid" src="img/slider6.jpg" alt="hotel" />
+                </div>
+              </div>
+              <div class="slids">
+                <div class="img_slider_popup slick-slide">
+                  <img class="img-fluid" src="img/slider7.jpg" alt="hotel" />
                 </div>
               </div>
             </div>
+            <button class="carousel_nav btn_next">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+            <button class="carousel_nav btn_prev">
+              <i class="fas fa-chevron-left"></i>
+            </button>
           </div>
-          <div class="form-row">
-            <div class="col-sm-6 col-12">
-              <button class="general_btn btn_white">Click Here</button>
-            </div>
-          </div>
-        </form>
+        </div>
+        <div class="col-md-5 col-12">
+          <h3 class="image_name">slider1.jpg</h3>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center">
+      <div class="container">
+        <p class="general_p">2020 by ourdevelopments-eg</p>
+        <p class="general_p">
+          <img src="img/facbook.png" alt="facebook logo" />
+        </p>
+        <p class="general_p">
+          Lorem ipsum, dolor sit amet consectetur adipisici
+        </p>
+      </div>
+    </footer>
+
+    <!-- contact us for mobile -->
+    <a
+      class="contact_for_mobile text-center visible-xs"
+      href="./contact-us.html"
+    >
+      <p class="general_p"><i class="far fa-list-alt"></i></p>
+      <p class="general_p">Contact Form</p>
+    </a>
+
+    <!-- special launching offer pop up -->
+    <div class="special_popup">
+      <div class="special_popup_content">
+        <span class="close_special_popup"><i class="fas fa-times"></i></span>
+        <div class="clearfix"></div>
+        <h2>
+          Special <br />
+          Launching <br />
+          offer
+        </h2>
+        <a class="special_popup_link" href="./contact-us.html">Go</a>
       </div>
     </div>
-  </section>
 
-  <!-- video section -->
-  <section class="video_section">
-    <div class="container">
-      <div class="video_slider_container">
-        <div class="video_slider">
-          <div class="video_item">
-            <video id="my-video" class="video-js" controls preload="auto" width="910" height="550"
-              poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
-              <source src="img/video1.mp4" type="video/mp4" />
-              <source src="img/video1.webm" type="video/webm" />
-              <p class="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a
-                web browser that
-                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-            <div class="video_controls_icons">
-              <span class="bar_video"><i class="fas fa-bars"></i></span>
-              <div class="controls_video_div">
-                <span class="share_v_icon"><i class="fas fa-share-alt"></i></span>
-                <span class="info_v_icon"><i class="fas fa-info"></i></span>
-                <span class="close_v_icon"><i class="fas fa-times"></i></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="video_item">
-            <video id="my-video" class="video-js" controls preload="auto" width="910" height="550"
-              poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
-              <source src="img/video1.mp4" type="video/mp4" />
-              <source src="img/video1.webm" type="video/webm" />
-              <p class="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a
-                web browser that
-                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-            <div class="video_controls_icons">
-              <span class="bar_video"><i class="fas fa-bars"></i></span>
-              <div class="controls_video_div">
-                <span class="share_v_icon"><i class="fas fa-share-alt"></i></span>
-                <span class="info_v_icon"><i class="fas fa-info"></i></span>
-                <span class="close_v_icon"><i class="fas fa-times"></i></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel_nav video_next"><i class="fas fa-chevron-right"></i></button>
-        <button class="carousel_nav video_prev"><i class="fas fa-chevron-left"></i></button>
-      </div>
-    </div>
-  </section>
-
-  <!--  Hacienda image slider section -->
-  <section class="image_slider">
-    <h2 class="head_white my-3">Palm Hills Hacienda Bay</h2>
-    <div class="slider">
-      <div class="item">
-        <div class="center_items">
-          <img class="img-fluid" src="img/slider1.jpg" alt="hotel">
-          <div class="social_share">
-            <div class="social_share_container">
-              <span class="heart_not_solid"><i class="far fa-heart"></i></span>
-              <span class="heart_solid"><i class="fas fa-heart"></i></span>
-              <span class="download_icon"><i class="fas fa-download"></i></span>
-              <span class="share_icon"><i class="fas fa-share"></i></span>
-            </div>
-            <div class="social_share_links">
-              <span><i class="fab fa-facebook-f"></i></span>
-              <span><i class="fab fa-twitter"></i></span>
-              <span><i class="fab fa-pinterest"></i></span>
-              <span><i class="fab fa-tumblr"></i></span>
-              <span><i class="far fa-envelope"></i></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="center_items">
-          <img class="img-fluid" src="img/slider2.jpg" alt="hotel">
-          <div class="social_share">
-            <div class="social_share_container">
-              <span class="heart_not_solid"><i class="far fa-heart"></i></span>
-              <span class="heart_solid"><i class="fas fa-heart"></i></span>
-              <span class="download_icon"><i class="fas fa-download"></i></span>
-              <span class="share_icon"><i class="fas fa-share"></i></span>
-            </div>
-            <div class="social_share_links">
-              <span><i class="fab fa-facebook-f"></i></span>
-              <span><i class="fab fa-twitter"></i></span>
-              <span><i class="fab fa-pinterest"></i></span>
-              <span><i class="fab fa-tumblr"></i></span>
-              <span><i class="far fa-envelope"></i></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="center_items">
-          <img class="img-fluid" src="img/slider3.jpg" alt="hotel">
-          <div class="social_share">
-            <div class="social_share_container">
-              <span class="heart_not_solid"><i class="far fa-heart"></i></span>
-              <span class="heart_solid"><i class="fas fa-heart"></i></span>
-              <span class="download_icon"><i class="fas fa-download"></i></span>
-              <span class="share_icon"><i class="fas fa-share"></i></span>
-            </div>
-            <div class="social_share_links">
-              <span><i class="fab fa-facebook-f"></i></span>
-              <span><i class="fab fa-twitter"></i></span>
-              <span><i class="fab fa-pinterest"></i></span>
-              <span><i class="fab fa-tumblr"></i></span>
-              <span><i class="far fa-envelope"></i></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="center_items">
-          <img class="img-fluid" src="img/slider4.jpg" alt="hotel">
-          <div class="social_share">
-            <div class="social_share_container">
-              <span class="heart_not_solid"><i class="far fa-heart"></i></span>
-              <span class="heart_solid"><i class="fas fa-heart"></i></span>
-              <span class="download_icon"><i class="fas fa-download"></i></span>
-              <span class="share_icon"><i class="fas fa-share"></i></span>
-            </div>
-            <div class="social_share_links">
-              <span><i class="fab fa-facebook-f"></i></span>
-              <span><i class="fab fa-twitter"></i></span>
-              <span><i class="fab fa-pinterest"></i></span>
-              <span><i class="fab fa-tumblr"></i></span>
-              <span><i class="far fa-envelope"></i></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="center_items">
-          <img class="img-fluid" src="img/slider5.jpg" alt="hotel">
-          <div class="social_share">
-            <div class="social_share_container">
-              <span class="heart_not_solid"><i class="far fa-heart"></i></span>
-              <span class="heart_solid"><i class="fas fa-heart"></i></span>
-              <span class="download_icon"><i class="fas fa-download"></i></span>
-              <span class="share_icon"><i class="fas fa-share"></i></span>
-            </div>
-            <div class="social_share_links">
-              <span><i class="fab fa-facebook-f"></i></span>
-              <span><i class="fab fa-twitter"></i></span>
-              <span><i class="fab fa-pinterest"></i></span>
-              <span><i class="fab fa-tumblr"></i></span>
-              <span><i class="far fa-envelope"></i></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="center_items">
-          <img class="img-fluid" src="img/slider6.jpg" alt="hotel">
-          <div class="social_share">
-            <div class="social_share_container">
-              <span class="heart_not_solid"><i class="far fa-heart"></i></span>
-              <span class="heart_solid"><i class="fas fa-heart"></i></span>
-              <span class="download_icon"><i class="fas fa-download"></i></span>
-              <span class="share_icon"><i class="fas fa-share"></i></span>
-            </div>
-            <div class="social_share_links">
-              <span><i class="fab fa-facebook-f"></i></span>
-              <span><i class="fab fa-twitter"></i></span>
-              <span><i class="fab fa-pinterest"></i></span>
-              <span><i class="fab fa-tumblr"></i></span>
-              <span><i class="far fa-envelope"></i></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="center_items">
-          <img class="img-fluid" src="img/slider7.jpg" alt="hotel">
-          <div class="social_share">
-            <div class="social_share_container">
-              <span class="heart_not_solid"><i class="far fa-heart"></i></span>
-              <span class="heart_solid"><i class="fas fa-heart"></i></span>
-              <span class="download_icon"><i class="fas fa-download"></i></span>
-              <span class="share_icon"><i class="fas fa-share"></i></span>
-            </div>
-            <div class="social_share_links">
-              <span><i class="fab fa-facebook-f"></i></span>
-              <span><i class="fab fa-twitter"></i></span>
-              <span><i class="fab fa-pinterest"></i></span>
-              <span><i class="fab fa-tumblr"></i></span>
-              <span><i class="far fa-envelope"></i></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel_nav carousel_next"><i class="fas fa-chevron-right"></i></button>
-    <button class="carousel_nav carousel_prev"><i class="fas fa-chevron-left"></i></button>
-  </section>
-
-  <!-- image slider popup -->
-  <section class="slider_popup_section">
-    <div class="controls">
-      <div class="float-left">
-        <span class="expand_icon"><i class="fas fa-expand"></i></span>
-        <span class="download_icon"><i class="fas fa-download"></i></span>
-        <span class="heart_not_solid_popup"><i class="far fa-heart"></i></span>
-        <span class="heart_solid_popup"><i class="fas fa-heart"></i><span class="likes_number"></span></span>
-        <span class="share_icon_popup hidden-xs">
-          <i class="fas fa-share"></i>
-          <div class="share_controls_part">
-            <span><i class="fab fa-facebook-f"></i></span>
-            <span><i class="fab fa-twitter"></i></span>
-            <span><i class="fab fa-pinterest"></i></span>
-            <span><i class="fab fa-tumblr"></i></span>
-            <span><i class="far fa-envelope"></i></span>
-          </div>
-        </span>
-      </div>
-      <div class="float-right">
-        <span class="close_popup"><i class="fas fa-times"></i></span>
-      </div>
-      <div class="clearfix"></div>
-    </div>
-    <div class="row">
-      <div class="col-md-7 col-12">
-        <div class="popup_slider_container">
-          <div class="slider_popup">
-            <div class="slids">
-              <div class="img_slider_popup slick-slide">
-                <img class="img-fluid" src="img/slider1.jpg" alt="hotel">
-              </div>
-            </div>
-            <div class="slids">
-              <div class="img_slider_popup slick-slide">
-                <img class="img-fluid" src="img/slider2.jpg" alt="hotel">
-              </div>
-            </div>
-            <div class="slids">
-              <div class="img_slider_popup slick-slide">
-                <img class="img-fluid" src="img/slider3.jpg" alt="hotel">
-              </div>
-            </div>
-            <div class="slids">
-              <div class="img_slider_popup slick-slide">
-                <img class="img-fluid" src="img/slider4.jpg" alt="hotel">
-              </div>
-            </div>
-            <div class="slids">
-              <div class="img_slider_popup slick-slide">
-                <img class="img-fluid" src="img/slider5.jpg" alt="hotel">
-              </div>
-            </div>
-            <div class="slids">
-              <div class="img_slider_popup slick-slide">
-                <img class="img-fluid" src="img/slider6.jpg" alt="hotel">
-              </div>
-            </div>
-            <div class="slids">
-              <div class="img_slider_popup slick-slide">
-                <img class="img-fluid" src="img/slider7.jpg" alt="hotel">
-              </div>
-            </div>
-          </div>
-          <button class="carousel_nav btn_next"><i class="fas fa-chevron-right"></i></button>
-          <button class="carousel_nav btn_prev"><i class="fas fa-chevron-left"></i></button>
-        </div>
-      </div>
-      <div class="col-md-5 col-12">
-        <h3 class="image_name">slider1.jpg</h3>
-      </div>
-    </div>
-  </section>
-
-  <footer class="text-center">
-    <div class="container">
-      <p class="general_p"> 2020 by ourdevelopments-eg </p>
-      <p class="general_p"> <img src="img/facbook.png" alt="facebook logo"> </p>
-      <p class="general_p"> Lorem ipsum, dolor sit amet consectetur adipisici </p>
-    </div>
-  </footer>
-
-  <!-- contact us for mobile -->
-  <a class="contact_for_mobile text-center visible-xs" href="./contact-us.html">
-    <p class="general_p"><i class="far fa-list-alt"></i></p>
-    <p class="general_p">Contact Form</p>
-  </a>
-
-  <!-- special launching offer pop up -->
-  <div class="special_popup">
-    <div class="special_popup_content">
-      <span class="close_special_popup"><i class="fas fa-times"></i></span>
-      <div class="clearfix"></div>
-      <h2>Special <br> Launching <br> offer</h2>
-      <a class="special_popup_link" href="./contact-us.html">Go</a>
-    </div>
-  </div>
-
-
-  <script src="js/jquery-3.5.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <!-- video.js -->
-  <script src="https://vjs.zencdn.net/7.8.3/video.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- video.js -->
+    <script src="https://vjs.zencdn.net/7.8.3/video.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

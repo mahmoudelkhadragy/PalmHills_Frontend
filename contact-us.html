@@ -1,237 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PalmHills</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PalmHills</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//db.onlinewebfonts.com/c/77d394fa0c1103c648f880b77cb4a32f?family=FuturaLTW01-Medium"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/fontawesome-all.min.css" />
+    <!-- slick.css -->
+    <link rel="stylesheet" href="css/slick.css" />
+    <!-- slick-theme -->
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- our style -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="//db.onlinewebfonts.com/c/77d394fa0c1103c648f880b77cb4a32f?family=FuturaLTW01-Medium" rel="stylesheet"
-    type="text/css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,700&display=swap"
-    rel="stylesheet">
-  <!-- fontawesome -->
-  <link rel="stylesheet" href="css/fontawesome-all.min.css">
-  <!-- slick.css -->
-  <link rel="stylesheet" href="css/slick.css">
-  <!-- slick-theme -->
-  <link rel="stylesheet" href="css/slick-theme.css">
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- our style -->
-  <link rel="stylesheet" href="css/main.css">
-</head>
-
-<body>
-  <!-- ScroleUp button mobile only -->
-  <span class="scrole_up_icon">
-    <i class="fas fa-chevron-up"></i>
-  </span>
-  <!-- Header Section -->
-  <header>
-    <div class="logo_header">
-      <img src="img/logo.png" alt="logo">
-    </div>
-  </header>
-  <!-- sidebar section for mobile -->
-  <span class="sidebar_icon visible-xs">
-    <i class="fas fa-bars"></i>
-  </span>
-  <div class="sidebar visible-xs">
-    <ul class="list-unstyled">
-      <li class="sidebar_link sidebar_active">
-        <a class="sidebar_a sidebar_active" href="#">Home</a>
-      </li>
-      <li class="sidebar_link">
-        <a class="sidebar_a " href="#">About Us</a>
-      </li>
-      <li class="sidebar_link">
-        <a class="sidebar_a " href="#">Contact Us</a>
-      </li>
-    </ul>
-  </div>
-
-  <!-- Navbar -->
-  <!-- Navbar -->
-  <nav class="navbar hidden-xs">
-    <div class="container">
-      <ul class="list-unstyled main_ul">
-        <li class="nav_link main_li active_link">
-          <a href="#">Home</a>
+  <body>
+    <!-- ScroleUp button mobile only -->
+    <span class="scrole_up_icon">
+      <i class="fas fa-chevron-up"></i>
+    </span>
+    <!-- Header Section -->
+    <header>
+      <div class="logo_header">
+        <img src="img/logo.png" alt="logo" />
+      </div>
+    </header>
+    <!-- sidebar section for mobile -->
+    <span class="sidebar_icon visible-xs">
+      <i class="fas fa-bars"></i>
+    </span>
+    <div class="sidebar visible-xs">
+      <ul class="list-unstyled">
+        <li class="sidebar_link sidebar_active">
+          <a class="sidebar_a sidebar_active" href="index.html">Home</a>
         </li>
-        <li class="nav_link main_li">
-          <a href="#">About Us</a>
-          <div class="sub_div">
-            <ul class="list-unstyled sub_ul">
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-            </ul>
-          </div>
+        <li class="sidebar_link">
+          <a class="sidebar_a" href="about-us.html">About Us</a>
         </li>
-        <li class="nav_link main_li">
-          <a href="#">Contact Us</a>
-          <div class="sub_div">
-            <ul class="list-unstyled sub_ul">
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="nav_link main_li">
-          <a href="#">More</a>
-          <div class="sub_div">
-            <ul class="list-unstyled sub_ul">
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-              <li class="sub_li">
-                <a href="#">Hacienda</a>
-              </li>
-            </ul>
-          </div>
+        <li class="sidebar_link">
+          <a class="sidebar_a" href="contact-us.html">Contact Us</a>
         </li>
       </ul>
     </div>
-  </nav>
-  <!-- contact-us -->
-  <section class="contact_us">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-12">
-          <div class="exclusive_offers mb-5">
-            <h2 class="head_white mt-4">
-              Click Below <br>
-              For Exclusive Offer
-            </h2>
-            <div class="offer_form">
-              <form>
-                <div class="form-row">
-                  <div class="col-12">
-                    <input type="text" class="form-control" placeholder="Name">
+
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="navbar hidden-xs">
+      <div class="container">
+        <ul class="list-unstyled main_ul">
+          <li class="nav_link main_li active_link">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav_link main_li">
+            <a href="about-us.html">About Us</a>
+            <div class="sub_div">
+              <ul class="list-unstyled sub_ul">
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav_link main_li">
+            <a href="contact-us.html">Contact Us</a>
+            <div class="sub_div">
+              <ul class="list-unstyled sub_ul">
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav_link main_li">
+            <a href="#">More</a>
+            <div class="sub_div">
+              <ul class="list-unstyled sub_ul">
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+                <li class="sub_li">
+                  <a href="#">Hacienda</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- contact-us -->
+    <section class="contact_us">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <div class="exclusive_offers mb-5">
+              <h2 class="head_white mt-4">
+                Click Below <br />
+                For Exclusive Offer
+              </h2>
+              <div class="offer_form">
+                <form>
+                  <div class="form-row">
+                    <div class="col-12">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <input
+                        type="number"
+                        class="form-control"
+                        placeholder="Phone"
+                      />
+                    </div>
                   </div>
-                  <div class="col-12">
-                    <input type="number" class="form-control" placeholder="Phone">
+                  <div class="form-row">
+                    <div class="col-12">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Email"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <select
+                        class="custom-select"
+                        id="validationDefault04"
+                        required
+                      >
+                        <option selected disabled value="">
+                          Choose Property Type
+                        </option>
+                        <option>Apartment</option>
+                        <option>Townhouse</option>
+                        <option>Penthouse</option>
+                        <option>TwinVilla</option>
+                        <option>StandaloneVilla</option>
+                        <option>Chalel</option>
+                        <option>Commercial</option>
+                      </select>
+                    </div>
                   </div>
-                </div>
-                <div class="form-row">
-                  <div class="col-12">
-                    <input type="email" class="form-control" placeholder="Email">
+                  <div class="form-row">
+                    <div class="col-12">
+                      <textarea
+                        class="form-control"
+                        rows="3"
+                        placeholder="Let us know what you need help with..."
+                      ></textarea>
+                    </div>
                   </div>
-                  <div class="col-12">
-                    <select class="custom-select" id="validationDefault04" required>
-                      <option selected disabled value="">Choose Property Type</option>
-                      <option>Apartment</option>
-                      <option>Townhouse</option>
-                      <option>Penthouse</option>
-                      <option>TwinVilla</option>
-                      <option>StandaloneVilla</option>
-                      <option>Chalel</option>
-                      <option>Commercial</option>
-                    </select>
+                  <div class="form-row">
+                    <div class="col-12">
+                      <button class="general_btn btn_white">Click Here</button>
+                    </div>
                   </div>
-                </div>
-                <div class="form-row">
-                  <div class="col-12">
-                    <textarea class="form-control" rows="3"
-                      placeholder="Let us know what you need help with..."></textarea>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="col-12">
-                    <button class="general_btn btn_white">Click Here</button>
-                  </div>
-                </div>
-              </form>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="map_fram">
+              <div style="width: 100%">
+                <iframe
+                  width="100%"
+                  height="520"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  src="https://maps.google.com/maps?width=100%25&amp;height=520&amp;hl=en&amp;q=Alexandria,%20city,%20Egypt+(PalmHills)&amp;t=p&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                ></iframe
+                ><a href="http://www.gps.ie/"></a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-12">
-          <div class="map_fram">
-            <div style="width: 100%"><iframe width="100%" height="520" frameborder="0" scrolling="no" marginheight="0"
-                marginwidth="0"
-                src="https://maps.google.com/maps?width=100%25&amp;height=520&amp;hl=en&amp;q=Alexandria,%20city,%20Egypt+(PalmHills)&amp;t=p&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
-                href="http://www.gps.ie/"></a></div>
+      </div>
+    </section>
+
+    <section class="images_info visible-xs">
+      <div class="container">
+        <div class="slider_images_info">
+          <div class="one_slide">
+            <img
+              class="img-fluid"
+              src="img/item1.png"
+              alt="Hotel Description"
+            />
+          </div>
+          <div class="one_slide">
+            <img
+              class="img-fluid"
+              src="img/item2.png"
+              alt="Hotel Description"
+            />
+          </div>
+          <div class="one_slide">
+            <img
+              class="img-fluid"
+              src="img/item3.png"
+              alt="Hotel Description"
+            />
+          </div>
+          <div class="one_slide">
+            <img
+              class="img-fluid"
+              src="img/item4.png"
+              alt="Hotel Description"
+            />
+          </div>
+          <div class="one_slide">
+            <img
+              class="img-fluid"
+              src="img/item5.png"
+              alt="Hotel Description"
+            />
+          </div>
+          <div class="one_slide">
+            <img
+              class="img-fluid"
+              src="img/item6.png"
+              alt="Hotel Description"
+            />
+          </div>
+          <div class="one_slide">
+            <img
+              class="img-fluid"
+              src="img/item7.png"
+              alt="Hotel Description"
+            />
+          </div>
+          <div class="one_slide">
+            <img
+              class="img-fluid"
+              src="img/item8.png"
+              alt="Hotel Description"
+            />
+          </div>
+          <div class="one_slide">
+            <img
+              class="img-fluid"
+              src="img/item9.png"
+              alt="Hotel Description"
+            />
+          </div>
+          <div class="one_slide">
+            <img
+              class="img-fluid"
+              src="img/item10.png"
+              alt="Hotel Description"
+            />
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="images_info visible-xs">
-    <div class="container">
-      <div class="slider_images_info">
-        <div class="one_slide">
-          <img class="img-fluid" src="img/item1.png" alt="Hotel Description">
-        </div>
-        <div class="one_slide">
-          <img class="img-fluid" src="img/item2.png" alt="Hotel Description">
-        </div>
-        <div class="one_slide">
-          <img class="img-fluid" src="img/item3.png" alt="Hotel Description">
-        </div>
-        <div class="one_slide">
-          <img class="img-fluid" src="img/item4.png" alt="Hotel Description">
-        </div>
-        <div class="one_slide">
-          <img class="img-fluid" src="img/item5.png" alt="Hotel Description">
-        </div>
-        <div class="one_slide">
-          <img class="img-fluid" src="img/item6.png" alt="Hotel Description">
-        </div>
-        <div class="one_slide">
-          <img class="img-fluid" src="img/item7.png" alt="Hotel Description">
-        </div>
-        <div class="one_slide">
-          <img class="img-fluid" src="img/item8.png" alt="Hotel Description">
-        </div>
-        <div class="one_slide">
-          <img class="img-fluid" src="img/item9.png" alt="Hotel Description">
-        </div>
-        <div class="one_slide">
-          <img class="img-fluid" src="img/item10.png" alt="Hotel Description">
-        </div>
+    <!-- footer -->
+    <footer class="text-center">
+      <div class="container">
+        <p class="general_p">2020 by ourdevelopments-eg</p>
+        <p class="general_p">
+          <img src="img/facbook.png" alt="facebook logo" />
+        </p>
+        <p class="general_p">
+          Lorem ipsum, dolor sit amet consectetur adipisici
+        </p>
       </div>
+    </footer>
+
+    <!-- contact us for mobile -->
+    <div class="contact_for_mobile text-center visible-xs">
+      <p class="general_p"><i class="far fa-list-alt"></i></p>
+      <p class="general_p">Contact Form</p>
     </div>
-  </section>
 
-  <!-- footer -->
-  <footer class="text-center">
-    <div class="container">
-      <p class="general_p"> 2020 by ourdevelopments-eg </p>
-      <p class="general_p"> <img src="img/facbook.png" alt="facebook logo"> </p>
-      <p class="general_p"> Lorem ipsum, dolor sit amet consectetur adipisici </p>
-    </div>
-  </footer>
-
-  <!-- contact us for mobile -->
-  <div class="contact_for_mobile text-center visible-xs">
-    <p class="general_p"><i class="far fa-list-alt"></i></p>
-    <p class="general_p">Contact Form</p>
-  </div>
-
-  <script src="js/jquery-3.5.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
